@@ -4,12 +4,11 @@ import { Info } from '../components/info'
 import styles from '../styles/Home.module.scss'
 import { useRouter } from 'next/router'
 import { Selector } from '../components/selector'
+import { useState } from 'react'
 
 export default function Home() {
   const router = useRouter();
   const { value, type } = router.query;
-
-  
 
   return (
     <div className={styles.container}>
