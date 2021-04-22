@@ -1,0 +1,70 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    .icon {
+        font-size: 6rem;
+        margin-top: 10vh;
+        color: #F27141;
+        margin-bottom: 10vh;
+    }
+
+    table {
+        max-width: 30vw;
+
+        :last-child {
+            text-align: right;
+        }
+        :first-child{
+            text-align: left;
+        }
+        margin-bottom: 5vh;
+    }
+}
+
+
+.title {
+    a{
+    color: #0070f3;
+    text-decoration: none;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: underline;
+    }
+
+
+        margin: 0;
+        line-height: 1.15;
+        font-size: 4rem;
+
+
+    &,
+    .description {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
