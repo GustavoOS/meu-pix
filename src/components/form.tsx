@@ -35,6 +35,7 @@ export function KeyForm() {
                         <option value="aleatória">Aleatória</option>
                         <option value="celular">Celular</option>
                         <option value="e-mail">E-Mail</option>
+                        <option value="copia e cola">Copia e Cola</option>
                     </select>
                 </div>
                 <Link href={encode()}>
