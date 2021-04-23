@@ -13,6 +13,13 @@ export function KeyForm() {
         setType(event.target.value);
     };
 
+    const encode = () => {
+        const params = new URLSearchParams();
+        params.append("value", value);
+        params.append("type", type);
+        return "/?" + params.toString();
+    };
+
     return (
         <form>
             <div className="mb-3">
@@ -27,9 +34,10 @@ export function KeyForm() {
                         <option value="cnpj">CNPJ</option>
                         <option value="aleatória">Aleatória</option>
                         <option value="celular">Celular</option>
+                        <option value="e-mail">E-Mail</option>
                     </select>
                 </div>
-                <Link href={`/?type=${type}&value=${value}`}>
+                <Link href={encode()}>
                     <button type="button" className="btn btn-primary">Compartilhar</button>
                 </Link>
             </div>

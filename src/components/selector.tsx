@@ -1,5 +1,5 @@
 import { KeyForm } from "./form";
-import { Info, KeyParam } from "./info";
+import { Info } from "./info";
 
 export function Selector (props) {
     if(props.value && props.type)
