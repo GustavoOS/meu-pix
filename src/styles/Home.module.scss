@@ -24,7 +24,8 @@
     }
 
     table {
-        max-width: 30vw;
+        max-width: 60vw;
+        align-items: stretch;
 
         :last-child {
             text-align: right;
